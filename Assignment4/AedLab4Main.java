@@ -25,6 +25,15 @@ public class AedLab4Main {
         return true;
     }
 
+    // check weights valid
+    public static boolean checkSum(List<Integer> as){
+        int total = 0;
+        for (int a : as) {
+            total += a;
+        }
+        return total == 100;
+    }
+
     // run main function
     public static void run() {
         Scanner sc = new Scanner(System.in);
@@ -53,6 +62,13 @@ public class AedLab4Main {
             return;
         }
         sc.close();
+
+        // check weights add up to 100
+        if (!checkSum(assignment)){
+            System.err.println("Invalid Input Error:: weights sum is not 100");
+            System.err.println("Please Input Again!");
+            return;
+        }
         
         // Initial Business Func and set value
         AedLab4Func func = new AedLab4Func();
