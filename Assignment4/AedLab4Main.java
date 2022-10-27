@@ -71,7 +71,7 @@ public class AedLab4Main {
         }
         
         // Initial Business Func and set value
-        AedLab4Func func = new AedLab4Func();
+        AedLab6Func func = new AedLab6Func();
         func.setNum(N);
         func.setTotalPointArr(totalPoints.stream().mapToInt(Integer::intValue).toArray());
         func.setEarnedPointArr(earnedPoints.stream().mapToInt(Integer::intValue).toArray());
