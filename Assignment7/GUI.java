@@ -36,9 +36,9 @@ public class GUI extends JPanel {
         jcomp10 = new JLabel("First 5 lines of new file");
 
         // set components properties
-        rText.setText("annual.csv");
+        rText.setText("Assignment7/annual.csv");
         rText.setToolTipText("Write the read file location");
-        wText.setText("default_output.csv");
+        wText.setText("Assignment7/default_output.csv");
         wText.setToolTipText("Write the write file location");
 
         // add components
